@@ -90,7 +90,8 @@ fetch(url)
     networkDataReceived = true;
     console.log('From web', data);
     for (var i = 0; i < data.articles.length; i++) {
-      createCard(data.articles[i]);
+		if(data.articles[i].urlToImage.indexOf("http://") != 0)
+			createCard(data.articles[i]);
   }
   });
 
@@ -105,7 +106,8 @@ if ('caches' in window) {
       console.log('From cache', data);
       if (!networkDataReceived) {
         for (var i = 0; i < data.articles.length; i++) {
-          createCard(data.articles[i]);
+			if(data.articles[i].urlToImage.indexOf("http://") != 0)
+				createCard(data.articles[i]);
       }
       }
     });
