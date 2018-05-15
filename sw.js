@@ -1,6 +1,6 @@
 importScripts('/src/js/idb.js');
 importScripts('/src/js/utility.js');
-var CACHE_STATIC_NAME = 'static-v32';
+var CACHE_STATIC_NAME = 'static-v35';
 var CACHE_DYNAMIC_NAME = 'dynamic-v7';
 var STATIC_FILES = [
   '/',

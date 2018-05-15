@@ -79,7 +79,7 @@ function createCard(newsObj) {
   container.appendChild(card);
 }
 
-var url = 'https://newsapi.org/v2/top-headlines?source=the-times-of-india&country=in&apiKey=09276aed4a624bc7bda25094d7ec29f5';
+var url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=09276aed4a624bc7bda25094d7ec29f5';
 var networkDataReceived = false;
 
 fetch(url)
